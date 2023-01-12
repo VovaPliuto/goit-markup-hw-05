@@ -39,7 +39,7 @@
         <section class="hero section">
             <div class="container">
                 <h1 class="title">Effective Solutions for Your Business</h1>
-                <button type="button" class="btn">Order Service</button>
+                <button type="button" class="btn" data-modal-open>Order Service</button>
             </div>
         </section>
 
@@ -256,58 +256,68 @@
                 </ul>
             </div>
         </section>
+
+        <!-- Our customers -->
+        <section class="our-customers-section">
+            <div class="container">
+                <h2 class="title-two">Customers</h2>
+                <ul class="customers-list list">
+                    <li class="customers-item">
+                        <a href="" class="customers-link  link">
+                            <svg class="customers-icon" width="41" height="47">
+                                <use href="./images/sprite.svg#icon-yaco"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="customers-item">
+                        <a href="" class="customers-link link">
+                            <svg class="customers-icon" width="104" height="56">
+                                <use href="./images/sprite.svg#icon-company-tab"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="customers-item">
+                        <a href="" class="customers-link link">
+                            <svg class="customers-icon" width="104" height="56">
+                                <use href="./images/sprite.svg#icon-company-circle"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="customers-item">
+                        <a href="" class="customers-link link">
+                            <svg class="customers-icon" width="104" height="56">
+                                <use href="./images/sprite.svg#icon-foster-peters"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="customers-item">
+                        <a href="" class="customers-link link">
+                            <svg class="customers-icon" width="104" height="56">
+                                <use href="./images/sprite.svg#icon-brand"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="customers-item">
+                        <a href="" class="customers-link link">
+                            <svg class="customers-icon" width="104" height="56">
+                                <use href="./images/sprite.svg#icon-company-rect"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
     </main>
 
-    <!-- Our customers -->
-    <section class="our-customers-section">
-        <div class="container">
-            <h2 class="title-two">Customers</h2>
-            <ul class="customers-list list">
-                <li class="customers-item">
-                    <a href="" class="customers-link  link">
-                        <svg class="customers-icon" width="41" height="47">
-                            <use href="./images/sprite.svg#icon-yaco"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="customers-item">
-                    <a href="" class="customers-link link">
-                        <svg class="customers-icon" width="104" height="56">
-                            <use href="./images/sprite.svg#icon-company-tab"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="customers-item">
-                    <a href="" class="customers-link link">
-                        <svg class="customers-icon" width="104" height="56">
-                            <use href="./images/sprite.svg#icon-company-circle"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="customers-item">
-                    <a href="" class="customers-link link">
-                        <svg class="customers-icon" width="104" height="56">
-                            <use href="./images/sprite.svg#icon-foster-peters"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="customers-item">
-                    <a href="" class="customers-link link">
-                        <svg class="customers-icon" width="104" height="56">
-                            <use href="./images/sprite.svg#icon-brand"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="customers-item">
-                    <a href="" class="customers-link link">
-                        <svg class="customers-icon" width="104" height="56">
-                            <use href="./images/sprite.svg#icon-company-rect"></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="modal-close-button" data-modal-close>
+                <svg class="close-button-icon" width="8">
+                    <use href="./images/sprite.svg#icon-close-button"></use>
+                </svg>
+            </button>
         </div>
-    </section>
+    </div>
 
     <!-- Footer -->
     <footer class="footer">
@@ -353,5 +363,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="./js/modal.js"></script>
+
 </body>
 </html>
